@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hi.sqlite_applicarion.MainActivity"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"
+        android:id="@+id/et1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:id="@+id/et2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Design"
+        android:id="@+id/et3"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/position"
+        android:id="@+id/et4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/et5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Insert"
+            android:text="@string/insert"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Read"
+            android:text="@string/read"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+
+            android:onClick="Update"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+
+            android:onClick="Delete"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
